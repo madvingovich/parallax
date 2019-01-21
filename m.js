@@ -142,21 +142,18 @@ $(document).ready(function() {
 
     $(window).on('mousemove', (e) => {
         parallax.call(img1, e, .05);
-        parallax.call(img2, e, .2);
+        parallax.call(img2, e, .1);
         parallax.call(img3, e, .025);
-        parallax.call(img4, e, .2);
+        parallax.call(img4, e, .1);
         parallax.call(img5, e, .05);
     });
 
 
     function parallax(e, coef) {
-        let img = this,
-            xCenter = img.offset().left + img.width() / 2,
-            yCenter = img.offset().top + img.height() / 2,
-            positionX = e.clientX - xCenter,
-            positionY = e.clientY - yCenter;
+        let img = this;
 
-        img.css({'transform': `translate(${ positionX * coef }px, ${ positionY * coef }px)`})
+        img.css('transform','translateX(' + e.clientX * coef + '%) translateY(' + e.clientY * coef + '%)');
+        img.css('-webkit-transform','translateX(' + e.clientX * coef + '%) translateY(' + e.clientY * coef + '%)');
     }
 
 });
