@@ -16,7 +16,7 @@ header {
     width: 100vw;
     height: 100vh;
     /*background: url("test.JPG");*/
-    background: url("sky.jpeg");
+    background: url("sky.png");
     background-size: cover;
     background-position: center;
     overflow: hidden;
@@ -69,7 +69,7 @@ header h1 {
     margin-top: 96vh;
     height: 104vh;
     width: 100vw;
-    background: url("test2.JPG");
+    background: url("6.jpeg");
     background-size: cover;
 }
 
@@ -111,7 +111,7 @@ header h1 {
 
 .little-1 {
     height: 500px;
-    background: url("4.jpg");
+    background: url("4.jpeg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
